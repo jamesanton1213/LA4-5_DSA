@@ -19,7 +19,7 @@ function serviceCustomer() {
     if (!isNaN(number) && number > 0 && number <= queue.length) {
         let servedCustomer = queue[number - 1];
         alert(`Now serving: ${servedCustomer}`);
-        queue.splice(number - 1, 1); // Remove the customer from the queue
+        queue.splice(number - 1, 1);
         displayQueue();
     } else {
         alert("Invalid queue number.");
